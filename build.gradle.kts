@@ -69,7 +69,7 @@ tasks.register("fatJar", Jar::class.java) {
     archiveBaseName = "egkmixnet"
 
     manifest {
-        attributes("Main-Class" to "org.cryptobiotic.verificabitur.vmn.RunVmnVerifier")
+        attributes("Main-Class" to "org.cryptobiotic.mixnet.RunVerifier")
     }
     from(configurations.runtimeClasspath.get()
         .onEach { println("add from runtimeClasspath: ${it.name}") }
